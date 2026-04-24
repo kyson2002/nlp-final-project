@@ -1,0 +1,51 @@
+ticker,name,exchange
+AAPL,Apple Inc,NASDAQ
+NVDA,NVIDIA Corp,NASDAQ
+MSFT,Microsoft Corp,NASDAQ
+AMZN,Amazon.com Inc,NASDAQ
+GOOGL,Alphabet Inc Class A,NASDAQ
+META,Meta Platforms Inc,NASDAQ
+TSLA,Tesla Inc,NASDAQ
+BRK-B,Berkshire Hathaway Class B,NYSE
+AVGO,Broadcom Inc,NASDAQ
+JPM,JPMorgan Chase & Co,NYSE
+LLY,Eli Lilly & Co,NYSE
+V,Visa Inc,NYSE
+UNH,UnitedHealth Group Inc,NYSE
+XOM,Exxon Mobil Corp,NYSE
+MA,Mastercard Inc,NYSE
+COST,Costco Wholesale Corp,NASDAQ
+HD,Home Depot Inc,NYSE
+PG,Procter & Gamble Co,NYSE
+JNJ,Johnson & Johnson,NYSE
+WMT,Walmart Inc,NYSE
+NFLX,Netflix Inc,NASDAQ
+ABBV,AbbVie Inc,NYSE
+BAC,Bank of America Corp,NYSE
+CRM,Salesforce Inc,NYSE
+ORCL,Oracle Corp,NYSE
+CVX,Chevron Corp,NYSE
+MRK,Merck & Co Inc,NYSE
+KO,Coca-Cola Co,NYSE
+AMD,Advanced Micro Devices,NASDAQ
+PEP,PepsiCo Inc,NASDAQ
+TMO,Thermo Fisher Scientific,NYSE
+ACN,Accenture PLC,NYSE
+LIN,Linde PLC,NASDAQ
+MCD,McDonalds Corp,NYSE
+CSCO,Cisco Systems Inc,NASDAQ
+ADBE,Adobe Inc,NASDAQ
+WFC,Wells Fargo & Co,NYSE
+ABT,Abbott Laboratories,NYSE
+TXN,Texas Instruments Inc,NASDAQ
+DIS,Walt Disney Co,NYSE
+PM,Philip Morris International,NYSE
+IBM,IBM Corp,NYSE
+QCOM,Qualcomm Inc,NASDAQ
+GE,GE Aerospace,NYSE
+INTU,Intuit Inc,NASDAQ
+MS,Morgan Stanley,NYSE
+GS,Goldman Sachs Group,NYSE
+NEE,NextEra Energy Inc,NYSE
+RTX,RTX Corp,NYSE
+SPGI,S&P Global Inc,NYSE
