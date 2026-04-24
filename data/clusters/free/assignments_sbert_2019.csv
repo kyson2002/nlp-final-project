@@ -1,0 +1,51 @@
+ticker,year,cluster,is_noise,theme_label
+AAPL,2019,-1,True,noise
+ABBV,2019,10,False,"ABBV, TMO, UNH"
+ABT,2019,12,False,"ABT, JNJ"
+ACN,2019,-1,True,noise
+ADBE,2019,15,False,"ADBE, META"
+AMD,2019,14,False,"AMD, CRM, KO, LLY, NEE"
+AMZN,2019,4,False,"AMZN, WMT"
+AVGO,2019,-1,True,noise
+BAC,2019,8,False,"BAC, WFC"
+BRK-B,2019,1,False,"BRK-B, HD, MS"
+COST,2019,2,False,"COST, GOOGL"
+CRM,2019,14,False,"AMD, CRM, KO, LLY, NEE"
+CSCO,2019,-1,True,noise
+CVX,2019,13,False,"CVX, TXN, XOM"
+DIS,2019,3,False,"DIS, NVDA"
+GE,2019,6,False,"GE, MCD, MSFT"
+GOOGL,2019,2,False,"COST, GOOGL"
+GS,2019,0,False,"GS, JPM"
+HD,2019,1,False,"BRK-B, HD, MS"
+IBM,2019,11,False,"IBM, MRK, PG"
+INTU,2019,9,False,"INTU, LIN"
+JNJ,2019,12,False,"ABT, JNJ"
+JPM,2019,0,False,"GS, JPM"
+KO,2019,14,False,"AMD, CRM, KO, LLY, NEE"
+LIN,2019,9,False,"INTU, LIN"
+LLY,2019,14,False,"AMD, CRM, KO, LLY, NEE"
+MA,2019,-1,True,noise
+MCD,2019,6,False,"GE, MCD, MSFT"
+META,2019,15,False,"ADBE, META"
+MRK,2019,11,False,"IBM, MRK, PG"
+MS,2019,1,False,"BRK-B, HD, MS"
+MSFT,2019,6,False,"GE, MCD, MSFT"
+NEE,2019,14,False,"AMD, CRM, KO, LLY, NEE"
+NFLX,2019,-1,True,noise
+NVDA,2019,3,False,"DIS, NVDA"
+ORCL,2019,-1,True,noise
+PEP,2019,-1,True,noise
+PG,2019,11,False,"IBM, MRK, PG"
+PM,2019,5,False,"PM, V"
+QCOM,2019,7,False,"QCOM, RTX, SPGI"
+RTX,2019,7,False,"QCOM, RTX, SPGI"
+SPGI,2019,7,False,"QCOM, RTX, SPGI"
+TMO,2019,10,False,"ABBV, TMO, UNH"
+TSLA,2019,-1,True,noise
+TXN,2019,13,False,"CVX, TXN, XOM"
+UNH,2019,10,False,"ABBV, TMO, UNH"
+V,2019,5,False,"PM, V"
+WFC,2019,8,False,"BAC, WFC"
+WMT,2019,4,False,"AMZN, WMT"
+XOM,2019,13,False,"CVX, TXN, XOM"
