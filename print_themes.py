@@ -8,6 +8,8 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 from sklearn.feature_extraction.text import TfidfVectorizer
+from boilerplate import get_boilerplate
+
 import re
 
 FILINGS_DIR = Path("data/edgar/filings")
@@ -15,102 +17,8 @@ METHODS     = ["tfidf", "sbert", "e5"]
 YEARS       = [2019, 2021, 2023]
 TOP_WORDS   = 10
 
-BOILERPLATE = [
 
-    # === 1. legal / filing boilerplate ===
-    "item", "items", "statements", "form", "sec",
-    "financial", "company", "business", "including",
-    "related", "information", "management",
-    "annual", "report", "fiscal", "year", "quarter", "period",
-    "thereof", "herein", "hereof", "hereby",
-    "whereas", "notwithstanding", "accordance",
-
-    # === 2. proxy / governance ===
-    "board", "committee",
-    "shareholder", "shareholders",
-    "stockholder", "stockholders",
-    "meeting", "vote", "voting",
-    "amendment",
-
-    # === 3. executive / titles ===
-    "officer", "director", "president", "vice",
-    "chief", "executive", "senior",
-
-    # === 4. proxy / filing keywords ===
-    "proxy", "pursuant", "duly", "signed",
-    "incorporated", "reference",
-
-    # === 5. signature / registrant block ===
-    "registrant", "behalf", "principal", "accounting",
-    "executed", "undersigned",
-    "signature", "signatures",
-    "corporate", "persons", "caused",
-    "chairman", "authorized", "indicated",
-    "capacity", "capacities",
-
-    # === 6. forward-looking / PSLRA ===
-    "forward", "looking",
-    "historical",
-    "expression", "expressions", "similar",
-    "projection", "projections",
-    "act", "securities", "reform", "private",
-    "meaning", "constitute",
-
-    # === 7. forward-looking verbs ===
-    "believe", "believes",
-    "expect", "expects",
-    "anticipate", "anticipates",
-    "plan", "plans",
-    "intend", "intends",
-    "seek", "seeks",
-    "estimate", "estimates",
-
-    # === 8. disclosure / narrative ===
-    "relating", "related",
-    "involve", "involves",
-    "outlook",
-    "assumption", "assumptions",
-    "disclosure", "disclosures",
-    "matter", "matters",
-
-    # === 9. risk / litigation ===
-    "litigation", "factor", "factors",
-    "development", "developments",
-    "expectation", "expectations", "regarding",
-    "uncertainty", "uncertainties",
-    "risk", "risks",
-
-    # === 10. trademark / naming ===
-    "trademark", "trademarks", "name", "names",
-
-    # === 11. months / time ===
-    "january", "february", "march", "april",
-
-    # === 12. misc formatting ===
-    "page", "pages", "applicable", "xa", "jr", "mr", "ms", "mrs",
-
-    # === 13. personal names (sample, not exhaustive) ===
-    "catherine", "jamie", "miller", "james", "john", "robert", "michael",
-    "william", "david", "thomas", "richard", "charles", "joseph", "christopher",
-    "daniel", "matthew", "anthony", "mark", "donald", "steven", "paul", "andrew",
-    "kenneth", "george", "brian", "edward", "kevin", "ronald", "timothy",
-    "mary", "patricia", "linda", "barbara", "elizabeth", "jennifer", "maria",
-    "susan", "margaret", "dorothy", "lisa", "nancy", "karen", "betty",
-    "lloyd", "lawrence", "dean",
-
-    # === filing / signature ===
-    "exchange", "corporation",
-    "director", "directors",
-    "requirement", "requirements",
-    "statement",
-
-    # === forward-looking ===
-    "future", "futures",
-    "result", "results",
-    "fact", "facts",
-    "caution",
-    "subject",
-]
+BOILERPLATE = get_boilerplate("combined")  # use both manual and LLM lists
 
 
 def load_texts():
