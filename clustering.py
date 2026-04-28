@@ -39,10 +39,10 @@ FILINGS_DIR = Path("data/edgar/filings")
 METHODS = ["tfidf", "sbert", "e5"]
 YEARS   = [2019, 2021, 2023]
 
-MIN_CLUSTER_SIZE = 2
-MIN_SAMPLES      = 1
+MIN_CLUSTER_SIZE = 8
+MIN_SAMPLES      = 3
 
-UMAP_COMPONENTS = 10
+UMAP_COMPONENTS = 15
 UMAP_2D         = 2
 
 
@@ -132,7 +132,7 @@ def reduce_umap(matrix, n_components, random_state=42):
 
     reducer = umap.UMAP(
         n_components=n_components,
-        n_neighbors=min(15, len(matrix) - 1),
+        n_neighbors=min(30, len(matrix) - 1),
         min_dist=0.1,
         metric="cosine",
         random_state=random_state,
